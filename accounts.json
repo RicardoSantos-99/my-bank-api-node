@@ -24,6 +24,11 @@
       "id": "3ce73c1a-6407-4019-b112-88d19c6931f4",
       "name": "John tre",
       "balance": 7000
+    },
+    {
+      "id": "faa58380-b771-4df6-921c-6ab6a3cac101",
+      "name": "Ronaldolo",
+      "balance": 3232
     }
   ]
 }

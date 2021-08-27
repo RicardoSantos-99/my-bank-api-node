@@ -1,6 +1,6 @@
-import { v4 as uuidv4 } from "uuid";
-import { promises as fs } from "fs";
+import AccountService from '../services/account.service.js'
 
+import { promises as fs } from "fs";
 const {readFile, writeFile} = fs
 
 async function createAccount(req, res, next) {
@@ -11,19 +11,11 @@ async function createAccount(req, res, next) {
             throw new Error(`name and balance is required`)
         }
 
-        const data = JSON.parse(await readFile(FILE_NAME));
+        const account = await AccountService.createAccount(name, balance)
 
-        const account = {
-            id: uuidv4(),
-            name,
-            balance
-        }
+        res.send(account)
 
-        data.accounts.push(account);
-
-        await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
-
-        res.send(data)
+        LOGGER.info(`POST /account - ${JSON.stringify(account)}`)
     } catch (err) {
         res.status(400).send({error: err.message})
     }

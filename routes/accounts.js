@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
     try {
-        let { name, balance } = req.body
+        let {name, balance} = req.body
 
         if (!name || balance === undefined) {
             throw new Error(`name and balance is required`)
@@ -79,7 +79,7 @@ router.delete("/:id", async (req, res, next) => {
 
 router.put("/", async (req, res, next) => {
     try {
-        const { id, name, balance} = req.body
+        const {id, name, balance} = req.body
 
         if (!id || !name || balance === undefined) {
             throw new Error(`id, name and balance is required`)
@@ -109,7 +109,7 @@ router.put("/", async (req, res, next) => {
 
 router.patch("/updateBalance", async (req, res, next) => {
     try {
-        const { id, balance } = req.body
+        const {id, balance} = req.body
 
         if (!id || balance === undefined) {
             throw new Error(`id and balance is required`)

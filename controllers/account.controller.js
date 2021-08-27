@@ -71,22 +71,9 @@ async function updateAccount(req, res, next) {
             throw new Error(`id, name and balance is required`)
         }
 
-        const data = JSON.parse(await readFile(FILE_NAME))
-        const index = data.accounts.findIndex(accounts => accounts.id === id)
+        const updatedAccount = await AccountService.updateAccount(id, name, balance)
 
-        if (index === -1) {
-            throw new Error("user not found")
-        }
-
-        data.accounts[index] = {
-            id,
-            name,
-            balance
-        }
-
-        await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
-
-        res.send(data.accounts[index])
+        res.send(updatedAccount)
 
     } catch (err) {
         next(err)
@@ -101,18 +88,9 @@ async function updateBalance(req, res, next) {
             throw new Error(`id and balance is required`)
         }
 
-        const data = JSON.parse(await readFile(FILE_NAME))
-        const index = data.accounts.findIndex(accounts => accounts.id === id)
+        const updatedAccount = await AccountService.updateBalance(id, balance)
 
-        if (index === -1) {
-            throw new Error("user not found")
-        }
-
-        data.accounts[index].balance = balance
-
-        await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
-
-        res.send(data.accounts[index])
+        res.send(updatedAccount)
 
     } catch (err) {
         next(err)

@@ -30,8 +30,44 @@ async function getAccountById(id) {
     return data.accounts.find(account => account.id === id)
 }
 
+async function updateAccount(id, name, balance) {
+    const data = await JSON.parse(await readFile(FILE_NAME))
+    const index = data.accounts.findIndex(account => account.id === id)
+
+    if (index === -1) {
+        throw new Error("user not found")
+    }
+
+    data.accounts[index] = {
+        id,
+        name,
+        balance
+    }
+
+    await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
+
+    return data.accounts[index]
+}
+
+async function updateBalance(id, balance) {
+    const data = JSON.parse(await readFile(FILE_NAME))
+    const index = data.accounts.findIndex(accounts => accounts.id === id)
+
+    if (index === -1) {
+        throw new Error("user not found")
+    }
+
+    data.accounts[index].balance = balance
+
+    await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
+
+    return data.accounts[index]
+}
+
 export default {
     createAccount,
     getAccount,
     getAccountById,
+    updateAccount,
+    updateBalance
 }

@@ -43,3 +43,38 @@
 2021-08-27T18:15:28.034Z [my-bank-api] info: API ON
 2021-08-27T18:15:30.522Z [my-bank-api] info: chegou
 2021-08-27T18:15:51.215Z [my-bank-api] info: API ON
+2021-08-27T18:20:45.145Z [my-bank-api] info: API ON
+2021-08-27T18:21:07.709Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:23:14.287Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:23:57.036Z [my-bank-api] info: API ON
+2021-08-27T18:24:04.402Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:24:07.205Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:24:08.055Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:24:09.157Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:24:58.802Z [my-bank-api] info: API ON
+2021-08-27T18:25:02.175Z [my-bank-api] info: API ON
+2021-08-27T18:25:06.075Z [my-bank-api] info: API ON
+2021-08-27T18:25:10.584Z [my-bank-api] info: [object Object]
+2021-08-27T18:25:10.586Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:25:40.458Z [my-bank-api] info: API ON
+2021-08-27T18:25:42.216Z [my-bank-api] info: {"accounts":[{"id":"60f5413d-6209-4620-8be4-cfe8a52b02de","name":"Lula","balance":1300},{"id":"f5073c67-5251-4aa0-b581-6601db3b2af5","name":"Bolsonaro","balance":5000},{"id":"600b8587-9b37-4751-bc80-1b0165aa1be0","name":"John tre","balance":7000},{"id":"62134b10-01aa-4cc4-85e5-07f36c49a950","name":"John tre","balance":7000},{"id":"3ce73c1a-6407-4019-b112-88d19c6931f4","name":"John tre","balance":7000},{"id":"faa58380-b771-4df6-921c-6ab6a3cac101","name":"Ronaldolo","balance":3232}]}
+2021-08-27T18:25:42.218Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:26:00.224Z [my-bank-api] info: API ON
+2021-08-27T18:26:02.773Z [my-bank-api] error: PUT /account - Cannot read property 'findIndex' of undefined
+2021-08-27T18:26:04.086Z [my-bank-api] error: PUT /account - Cannot read property 'findIndex' of undefined
+2021-08-27T18:26:14.026Z [my-bank-api] info: API ON
+2021-08-27T18:26:22.662Z [my-bank-api] info: API ON
+2021-08-27T18:26:26.676Z [my-bank-api] info: API ON
+2021-08-27T18:26:29.873Z [my-bank-api] info: {"accounts":[{"id":"60f5413d-6209-4620-8be4-cfe8a52b02de","name":"Lula","balance":1300},{"id":"f5073c67-5251-4aa0-b581-6601db3b2af5","name":"Bolsonaro","balance":5000},{"id":"600b8587-9b37-4751-bc80-1b0165aa1be0","name":"John tre","balance":7000},{"id":"62134b10-01aa-4cc4-85e5-07f36c49a950","name":"John tre","balance":7000},{"id":"3ce73c1a-6407-4019-b112-88d19c6931f4","name":"John tre","balance":7000},{"id":"faa58380-b771-4df6-921c-6ab6a3cac101","name":"Ronaldolo","balance":3232}]}
+2021-08-27T18:26:29.873Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:27:18.941Z [my-bank-api] info: API ON
+2021-08-27T18:27:37.919Z [my-bank-api] info: API ON
+2021-08-27T18:27:41.856Z [my-bank-api] info: {"accounts":[{"id":"60f5413d-6209-4620-8be4-cfe8a52b02de","name":"Lula","balance":1300},{"id":"f5073c67-5251-4aa0-b581-6601db3b2af5","name":"Bolsonaro","balance":5000},{"id":"600b8587-9b37-4751-bc80-1b0165aa1be0","name":"John tre","balance":7000},{"id":"62134b10-01aa-4cc4-85e5-07f36c49a950","name":"John tre","balance":7000},{"id":"3ce73c1a-6407-4019-b112-88d19c6931f4","name":"John tre","balance":7000},{"id":"faa58380-b771-4df6-921c-6ab6a3cac101","name":"Ronaldolo","balance":3232}]}
+2021-08-27T18:27:41.861Z [my-bank-api] error: PUT /account - user not found
+2021-08-27T18:28:01.219Z [my-bank-api] info: API ON
+2021-08-27T18:28:22.301Z [my-bank-api] info: API ON
+2021-08-27T18:28:27.502Z [my-bank-api] info: API ON
+2021-08-27T18:28:31.963Z [my-bank-api] info: API ON
+2021-08-27T18:29:21.736Z [my-bank-api] info: API ON
+2021-08-27T18:30:16.133Z [my-bank-api] info: API ON
+2021-08-27T18:30:27.977Z [my-bank-api] info: API ON

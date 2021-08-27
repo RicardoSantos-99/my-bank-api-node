@@ -1,0 +1,36 @@
+2021-08-26T01:15:38.848Z [my-bank-api] info: API ON
+2021-08-26T01:16:15.416Z [my-bank-api] info: API ON
+2021-08-26T01:16:18.405Z [my-bank-api] info: API ON
+2021-08-26T01:17:09.236Z [my-bank-api] info: API ON
+2021-08-26T01:17:57.002Z [my-bank-api] info: API ON
+2021-08-26T01:20:41.283Z [my-bank-api] info: API ON
+2021-08-26T01:21:14.218Z [my-bank-api] info: API ON
+2021-08-26T01:22:07.983Z [my-bank-api] info: API ON
+2021-08-26T01:22:50.576Z [my-bank-api] error: PUT /account - ENOENT: no such file or directory, open 'accounts.json'
+2021-08-26T01:23:09.705Z [my-bank-api] error: PATCH /account - ENOENT: no such file or directory, open 'accounts.json'
+2021-08-26T01:23:15.389Z [my-bank-api] error: GET /account - ENOENT: no such file or directory, open 'accounts.json'
+2021-08-26T01:23:17.522Z [my-bank-api] error: GET /account - ENOENT: no such file or directory, open 'accounts.json'
+2021-08-26T01:23:19.251Z [my-bank-api] error: DELETE /account - ENOENT: no such file or directory, open 'accounts.json'
+2021-08-26T01:23:37.477Z [my-bank-api] info: Api Started and file created
+2021-08-26T11:37:34.073Z [my-bank-api] info: API ON
+2021-08-26T11:38:26.509Z [my-bank-api] info: API ON
+2021-08-26T11:39:19.503Z [my-bank-api] info: API ON
+2021-08-26T11:39:53.993Z [my-bank-api] info: API ON
+2021-08-26T11:40:46.537Z [my-bank-api] info: API ON
+2021-08-26T11:41:00.600Z [my-bank-api] info: API ON
+2021-08-26T11:43:36.588Z [my-bank-api] info: API ON
+2021-08-26T11:44:10.764Z [my-bank-api] info: API ON
+2021-08-26T11:44:36.900Z [my-bank-api] info: API ON
+2021-08-26T11:44:51.898Z [my-bank-api] info: API ON
+2021-08-26T11:45:09.077Z [my-bank-api] info: API ON
+2021-08-26T11:45:14.810Z [my-bank-api] info: API ON
+2021-08-26T11:45:33.304Z [my-bank-api] info: API ON
+2021-08-26T11:47:19.634Z [my-bank-api] info: API ON
+2021-08-26T11:47:30.248Z [my-bank-api] info: API ON
+2021-08-26T11:47:34.162Z [my-bank-api] info: API ON
+2021-08-26T11:48:23.094Z [my-bank-api] info: API ON
+2021-08-26T11:48:33.430Z [my-bank-api] info: API ON
+2021-08-26T11:49:00.339Z [my-bank-api] error: PUT /account - account is not defined
+2021-08-26T11:49:56.377Z [my-bank-api] info: API ON
+2021-08-26T11:50:51.107Z [my-bank-api] info: API ON
+2021-08-26T11:51:09.909Z [my-bank-api] info: API ON

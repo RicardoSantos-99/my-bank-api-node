@@ -1,0 +1,29 @@
+{
+  "accounts": [
+    {
+      "id": "3a08a77a-5531-45af-a984-15d169d23291",
+      "name": "Ronaldo",
+      "balance": 2000
+    },
+    {
+      "id": "60f5413d-6209-4620-8be4-cfe8a52b02de",
+      "name": "Lula",
+      "balance": 1300
+    },
+    {
+      "id": "f5073c67-5251-4aa0-b581-6601db3b2af5",
+      "name": "Bolsonaro",
+      "balance": 5000
+    },
+    {
+      "id": "600b8587-9b37-4751-bc80-1b0165aa1be0",
+      "name": "John tre",
+      "balance": 7000
+    },
+    {
+      "id": "62134b10-01aa-4cc4-85e5-07f36c49a950",
+      "name": "John tre",
+      "balance": 7000
+    }
+  ]
+}

@@ -1,9 +1,5 @@
 import AccountService from '../services/account.service.js'
 
-import { promises as fs } from "fs";
-
-const {readFile, writeFile} = fs
-
 async function createAccount(req, res, next) {
     try {
         let {name, balance} = req.body
@@ -50,13 +46,11 @@ async function deleteAccount(req, res, next) {
     try {
         const {id} = req.params
 
-        const data = JSON.parse(await readFile(FILE_NAME))
-
-        data.accounts = data.accounts.filter(account => account.id !== id)
-
-        await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
+       await AccountService.deleteAccount(id)
 
         res.end()
+
+        LOGGER.info(`DELETE /account - ${id}`)
 
     } catch (err) {
         next(err)
@@ -75,6 +69,8 @@ async function updateAccount(req, res, next) {
 
         res.send(updatedAccount)
 
+        LOGGER.info(`PUT /account - ${JSON.stringify(updatedAccount)}`)
+
     } catch (err) {
         next(err)
     }
@@ -91,6 +87,8 @@ async function updateBalance(req, res, next) {
         const updatedAccount = await AccountService.updateBalance(id, balance)
 
         res.send(updatedAccount)
+
+        LOGGER.info(`PATCH /account - ${JSON.stringify(updatedAccount)}`)
 
     } catch (err) {
         next(err)

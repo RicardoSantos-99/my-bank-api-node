@@ -30,6 +30,14 @@ async function getAccountById(id) {
     return data.accounts.find(account => account.id === id)
 }
 
+async function deleteAccount(id) {
+    const data = JSON.parse(await readFile(FILE_NAME))
+
+    data.accounts = data.accounts.filter(account => account.id !== id)
+
+    await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
+}
+
 async function updateAccount(id, name, balance) {
     const data = await JSON.parse(await readFile(FILE_NAME))
     const index = data.accounts.findIndex(account => account.id === id)
@@ -68,6 +76,7 @@ export default {
     createAccount,
     getAccount,
     getAccountById,
+    deleteAccount,
     updateAccount,
     updateBalance
 }

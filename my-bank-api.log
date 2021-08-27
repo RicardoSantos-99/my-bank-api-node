@@ -80,3 +80,94 @@
 2021-08-27T18:30:27.977Z [my-bank-api] info: API ON
 2021-08-27T18:38:53.671Z [my-bank-api] info: API ON
 2021-08-27T18:38:56.806Z [my-bank-api] info: DELETE /account - faa58380-b771-4df6-921c-6ab6a3cac101
+2021-08-27T19:00:54.897Z [my-bank-api] info: API ON
+2021-08-27T19:01:02.546Z [my-bank-api] error: GET /account - accounts.find is not a function
+2021-08-27T19:01:32.886Z [my-bank-api] info: API ON
+2021-08-27T19:01:37.888Z [my-bank-api] error: GET /account - accounts.find is not a function
+2021-08-27T19:01:45.674Z [my-bank-api] info: API ON
+2021-08-27T19:01:46.894Z [my-bank-api] info: API ON
+2021-08-27T19:02:04.345Z [my-bank-api] info: API ON
+2021-08-27T19:02:07.159Z [my-bank-api] info: API ON
+2021-08-27T19:02:57.705Z [my-bank-api] info: API ON
+2021-08-27T19:03:18.481Z [my-bank-api] info: API ON
+2021-08-27T19:03:26.317Z [my-bank-api] info: API ON
+2021-08-27T19:03:33.388Z [my-bank-api] info: API ON
+2021-08-27T19:03:54.381Z [my-bank-api] info: API ON
+2021-08-27T19:04:06.190Z [my-bank-api] info: API ON
+2021-08-27T19:04:53.028Z [my-bank-api] info: API ON
+2021-08-27T19:05:10.487Z [my-bank-api] info: API ON
+2021-08-27T19:05:26.104Z [my-bank-api] info: API ON
+2021-08-27T19:05:43.767Z [my-bank-api] info: API ON
+2021-08-27T19:05:50.379Z [my-bank-api] info: API ON
+2021-08-27T19:06:21.749Z [my-bank-api] info: API ON
+2021-08-27T19:06:27.797Z [my-bank-api] info: API ON
+2021-08-27T19:06:41.078Z [my-bank-api] info: API ON
+2021-08-27T19:06:50.846Z [my-bank-api] info: API ON
+2021-08-27T19:06:56.438Z [my-bank-api] info: API ON
+2021-08-27T19:07:19.930Z [my-bank-api] info: API ON
+2021-08-27T19:07:33.270Z [my-bank-api] info: API ON
+2021-08-27T19:07:41.730Z [my-bank-api] info: POST /account - {"id":"1f7b152f-d89a-4a7c-93b2-e9effae06c60","name":"Trouxs","balance":3232}
+2021-08-27T19:08:29.375Z [my-bank-api] info: API ON
+2021-08-27T19:08:57.702Z [my-bank-api] info: API ON
+2021-08-27T19:09:17.381Z [my-bank-api] info: API ON
+2021-08-27T19:10:29.240Z [my-bank-api] info: API ON
+2021-08-27T19:11:22.437Z [my-bank-api] info: API ON
+2021-08-27T19:11:45.392Z [my-bank-api] info: API ON
+2021-08-27T19:11:57.686Z [my-bank-api] info: API ON
+2021-08-27T19:13:05.792Z [my-bank-api] info: API ON
+2021-08-27T19:13:07.417Z [my-bank-api] info: API ON
+2021-08-27T19:13:55.427Z [my-bank-api] info: API ON
+2021-08-27T19:13:57.796Z [my-bank-api] info: API ON
+2021-08-27T19:15:06.873Z [my-bank-api] info: API ON
+2021-08-27T19:15:28.277Z [my-bank-api] info: API ON
+2021-08-27T19:15:52.898Z [my-bank-api] info: API ON
+2021-08-27T19:16:16.606Z [my-bank-api] info: API ON
+2021-08-27T19:16:21.351Z [my-bank-api] info: API ON
+2021-08-27T19:16:27.591Z [my-bank-api] info: API ON
+2021-08-27T19:16:36.246Z [my-bank-api] info: API ON
+2021-08-27T19:17:35.100Z [my-bank-api] info: API ON
+2021-08-27T19:17:45.453Z [my-bank-api] info: API ON
+2021-08-27T19:18:30.035Z [my-bank-api] info: API ON
+2021-08-27T19:18:39.427Z [my-bank-api] info: API ON
+2021-08-27T19:18:54.616Z [my-bank-api] info: API ON
+2021-08-27T19:19:16.379Z [my-bank-api] info: API ON
+2021-08-27T19:19:24.086Z [my-bank-api] info: API ON
+2021-08-27T19:19:37.440Z [my-bank-api] info: API ON
+2021-08-27T19:19:40.143Z [my-bank-api] info: API ON
+2021-08-27T19:20:40.509Z [my-bank-api] info: POST /account - {"id":"1224d3dc-bc78-4a24-8d18-d0130d6fd65c","name":"Trouxao","balance":5555}
+2021-08-27T19:20:52.105Z [my-bank-api] error: PUT /account - Cannot read property 'findIndex' of undefined
+2021-08-27T19:21:38.717Z [my-bank-api] info: API ON
+2021-08-27T19:22:45.502Z [my-bank-api] info: Api Started and file created
+2021-08-27T19:22:57.153Z [my-bank-api] info: POST /account - {"id":"256532d4-0ae5-413d-b508-95e793a150c1","name":"Trouxao","balance":5555}
+2021-08-27T19:24:16.393Z [my-bank-api] info: API ON
+2021-08-27T19:24:33.862Z [my-bank-api] info: API ON
+2021-08-27T19:25:22.397Z [my-bank-api] info: API ON
+2021-08-27T19:25:25.758Z [my-bank-api] info: API ON
+2021-08-27T19:25:53.631Z [my-bank-api] info: Api Started and file created
+2021-08-27T19:25:57.384Z [my-bank-api] info: POST /account - {"id":"1a600e34-0f2e-4c5f-bfb4-5d3667e0e250","name":"Trouxao","balance":5555}
+2021-08-27T19:26:28.091Z [my-bank-api] info: API ON
+2021-08-27T19:26:48.123Z [my-bank-api] info: Api Started and file created
+2021-08-27T19:26:49.573Z [my-bank-api] info: POST /account - {"id":"24e767a2-bb3b-4422-be3a-9518df46c909","name":"Trouxao","balance":5555}
+2021-08-27T19:26:57.160Z [my-bank-api] info: POST /account - {"id":"211506fc-87fa-464d-889d-1f17c68985cb","name":"Trouxao","balance":5555}
+2021-08-27T19:27:07.695Z [my-bank-api] info: POST /account - {"id":"09e5b468-78e8-438c-a0e8-8004ff7ee6cc","name":"Trouxao","balance":3232}
+2021-08-27T19:27:38.852Z [my-bank-api] info: PUT /account - {"id":"09e5b468-78e8-438c-a0e8-8004ff7ee6cc","name":"Lulinha","balance":5000}
+2021-08-27T19:27:55.566Z [my-bank-api] error: DELETE /account - accounts.filter is not a function
+2021-08-27T19:27:58.326Z [my-bank-api] error: DELETE /account - accounts.filter is not a function
+2021-08-27T19:28:41.278Z [my-bank-api] info: API ON
+2021-08-27T19:28:43.065Z [my-bank-api] error: DELETE /account - accounts.filter is not a function
+2021-08-27T19:29:05.679Z [my-bank-api] error: DELETE /account - accounts.filter is not a function
+2021-08-27T19:29:41.307Z [my-bank-api] info: API ON
+2021-08-27T19:29:48.520Z [my-bank-api] error: DELETE /account - accounts is not defined
+2021-08-27T19:29:58.043Z [my-bank-api] info: API ON
+2021-08-27T19:29:59.843Z [my-bank-api] error: DELETE /account - Cannot read property 'filter' of undefined
+2021-08-27T19:30:08.022Z [my-bank-api] info: API ON
+2021-08-27T19:30:09.357Z [my-bank-api] error: DELETE /account - Cannot read property 'filter' of undefined
+2021-08-27T19:30:12.673Z [my-bank-api] error: DELETE /account - Cannot read property 'filter' of undefined
+2021-08-27T19:30:26.724Z [my-bank-api] info: API ON
+2021-08-27T19:30:33.028Z [my-bank-api] error: DELETE /account - Cannot read property 'filter' of undefined
+2021-08-27T19:31:02.443Z [my-bank-api] error: DELETE /account - Cannot read property 'filter' of undefined
+2021-08-27T19:31:27.444Z [my-bank-api] info: API ON
+2021-08-27T19:32:06.955Z [my-bank-api] info: API ON
+2021-08-27T19:32:23.138Z [my-bank-api] info: API ON
+2021-08-27T19:32:26.862Z [my-bank-api] info: DELETE /account - 24e767a2-bb3b-4422-be3a-9518df46c909
+2021-08-27T19:32:59.713Z [my-bank-api] info: PATCH /account - {"id":"09e5b468-78e8-438c-a0e8-8004ff7ee6cc","name":"Lulinha","balance":1200}

@@ -13,7 +13,7 @@ const logFormat = printf(({level, message, label, timestamp}) => {
 
 global.FILE_NAME = "accounts.json";
 global.LOGGER = winston.createLogger({
-    level: 'error',
+    level: 'silly',
     transports: [
         new (winston.transports.Console)(),
         new (winston.transports.File)({filename: "my-bank-api.log"}),

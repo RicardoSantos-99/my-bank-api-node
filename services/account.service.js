@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import { promises as fs } from "fs";
+
 const {readFile, writeFile} = fs
 
 async function createAccount(name, balance) {
@@ -19,6 +20,18 @@ async function createAccount(name, balance) {
 
 }
 
+async function getAccount() {
+    return JSON.parse(await readFile(FILE_NAME))
+}
+
+async function getAccountById(id) {
+    const data = JSON.parse(await readFile("accounts.json"))
+
+    return data.accounts.find(account => account.id === id)
+}
+
 export default {
-    createAccount
+    createAccount,
+    getAccount,
+    getAccountById,
 }

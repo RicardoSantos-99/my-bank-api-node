@@ -1,6 +1,7 @@
 import AccountService from '../services/account.service.js'
 
 import { promises as fs } from "fs";
+
 const {readFile, writeFile} = fs
 
 async function createAccount(req, res, next) {
@@ -23,7 +24,7 @@ async function createAccount(req, res, next) {
 
 async function getAccounts(req, res, next) {
     try {
-        const data = JSON.parse(await readFile(FILE_NAME))
+        const data = await AccountService.getAccount()
 
         res.send(data)
 
@@ -36,11 +37,9 @@ async function getAccountById(req, res, next) {
     try {
         const {id} = req.params
 
-        const data = JSON.parse(await readFile("accounts.json"))
+        const data = await AccountService.getAccountById(id)
 
-        const account = data.accounts.find(account => account.id === id)
-
-        res.send(account)
+        res.send(data)
 
     } catch (err) {
         next(err)

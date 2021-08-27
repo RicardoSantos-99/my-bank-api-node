@@ -4,11 +4,13 @@ import { v4 as uuidv4 } from "uuid";
 const {readFile, writeFile} = fs
 
 async function writeAccount(account) {
-    const data = {
-        accounts: [...account]
-    }
+    const data = JSON.parse(await readFile(FILE_NAME));
+
+    data.accounts.push(account)
 
     await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
+
+    return account
 }
 
 async function getAccounts() {
@@ -20,23 +22,21 @@ async function getAccounts() {
 async function getAccountById(id) {
     const accounts = await getAccounts()
 
-    return accounts.find(account => account.id === id)
+    const account = accounts.find(account => account.id === id)
+
+    if (!account) throw new Error("account not find")
+
+    return account
 }
 
 async function insertAccount(name, balance) {
-    const accounts = await getAccounts()
-
     const account = {
         id: uuidv4(),
         name,
         balance
     }
 
-    accounts.push(account);
-
-    await writeAccount(accounts);
-
-    return account
+    return await writeAccount(account);
 }
 
 async function removeAccount(id) {
@@ -44,7 +44,11 @@ async function removeAccount(id) {
 
     const newAccounts = accounts.filter(account => account.id !== id)
 
-    await writeAccount(newAccounts)
+    const data = {
+        accounts: newAccounts
+    }
+
+    await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
 }
 
 async function updateAccount(id, name, balance) {
@@ -61,24 +65,22 @@ async function updateAccount(id, name, balance) {
         balance
     }
 
-    await writeAccount(accounts)
+    const data = {
+        accounts
+    }
+
+    await writeFile(FILE_NAME, JSON.stringify(data, null, 2))
 
     return accounts[index]
 }
 
 async function updateBalance(id, balance) {
-    const accounts = await getAccounts()
-    const index = accounts.findIndex(accounts => accounts.id === id)
+    const account = await getAccountById(id)
+    account.balance = balance
 
-    if (index === -1) {
-        throw new Error("user not found")
-    }
+    await writeAccount(account)
 
-    accounts[index].balance = balance
-
-    await writeAccount(accounts)
-
-    return accounts[index]
+    return account
 }
 
 export default {

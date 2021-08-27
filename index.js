@@ -2,6 +2,7 @@ import { promises as fs } from "fs"
 import express from "express";
 import winston from 'winston';
 import accountsRouter from "./routes/accounts.js";
+import cors from "cors"
 
 const {readFile, writeFile} = fs
 const {combine, timestamp, label, printf} = winston.format

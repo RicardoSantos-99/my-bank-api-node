@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuid4 } from "uuid";
 
 const {readFile, writeFile} = fs
 
@@ -31,7 +31,7 @@ async function getAccountById(id) {
 
 async function insertAccount(name, balance) {
     const account = {
-        id: uuidv4(),
+        id: uuid4(),
         name,
         balance
     }
